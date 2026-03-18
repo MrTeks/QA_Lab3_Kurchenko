@@ -1,0 +1,89 @@
+\doxysection{spice Class Reference}
+\label{classspice}\index{spice@{spice}}
+
+
+Класс для представления специи/\+добавки к блюду  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ init} (double cost, int grams)
+\begin{DoxyCompactList}\small\item\em Инициализация специи с заданными параметрами \end{DoxyCompactList}\item 
+void \textbf{ read} ()
+\begin{DoxyCompactList}\small\item\em Ввод данных о специи с клавиатуры \end{DoxyCompactList}\item 
+void \textbf{ display} ()
+\begin{DoxyCompactList}\small\item\em Вывод информации о специи на экран \end{DoxyCompactList}\item 
+double \textbf{ calculate\+\_\+cost} ()
+\begin{DoxyCompactList}\small\item\em Расчет общей стоимости специи \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для представления специи/\+добавки к блюду 
+
+Класс spice хранит информацию о стоимости специи и её количестве. Позволяет рассчитать общую стоимость специи для блюда.
+
+Формула расчета стоимости специи:\+   \[C_{spice} = p \times n
+\] где:\+
+\begin{DoxyItemize}
+\item p -\/ стоимость за грамм
+\item n -\/ количество грамм на кг 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\doxysubsection{Member Function Documentation}
+\index{spice@{spice}!calculate\_cost@{calculate\_cost}}
+\index{calculate\_cost@{calculate\_cost}!spice@{spice}}
+\doxysubsubsection{calculate\_cost()}
+{\footnotesize\ttfamily \label{classspice_aaa259e20ce3917772fc467fe79f19b60} 
+double spice::\+calculate\+\_\+cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Расчет общей стоимости специи 
+
+\begin{DoxyReturn}{Returns}
+Стоимость специи
+\end{DoxyReturn}
+Рассчитывает стоимость по формуле:\+ cost\+\_\+per\+\_\+gram $\ast$ grams\+\_\+per\+\_\+kg \index{spice@{spice}!display@{display}}
+\index{display@{display}!spice@{spice}}
+\doxysubsubsection{display()}
+{\footnotesize\ttfamily \label{classspice_a56b69bb91b1dc62242ccae083ce02c17} 
+void spice::\+display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Вывод информации о специи на экран 
+
+\index{spice@{spice}!init@{init}}
+\index{init@{init}!spice@{spice}}
+\doxysubsubsection{init()}
+{\footnotesize\ttfamily \label{classspice_a364b617019086878834a5287512b183a} 
+void spice::\+init (\begin{DoxyParamCaption}\item[{double}]{cost}{, }\item[{int}]{grams}{}\end{DoxyParamCaption})}
+
+
+
+Инициализация специи с заданными параметрами 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & Стоимость за грамм \\
+\hline
+{\em grams} & Количество грамм на кг \\
+\hline
+\end{DoxyParams}
+\index{spice@{spice}!read@{read}}
+\index{read@{read}!spice@{spice}}
+\doxysubsubsection{read()}
+{\footnotesize\ttfamily \label{classspice_add796d3beef33d321c0a9df34d1a656b} 
+void spice::\+read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Ввод данных о специи с клавиатуры 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+testlab3/\+\textbf{ testlab3.\+cpp}\end{DoxyCompactItemize}

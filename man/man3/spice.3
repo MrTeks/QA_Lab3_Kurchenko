@@ -1,0 +1,84 @@
+.TH "spice" 3 "testlab3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+spice \- Класс для представления специи/добавки к блюду  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP (double cost, int grams)"
+.br
+.RI "Инициализация специи с заданными параметрами "
+.ti -1c
+.RI "void \fBread\fP ()"
+.br
+.RI "Ввод данных о специи с клавиатуры "
+.ti -1c
+.RI "void \fBdisplay\fP ()"
+.br
+.RI "Вывод информации о специи на экран "
+.ti -1c
+.RI "double \fBcalculate_cost\fP ()"
+.br
+.RI "Расчет общей стоимости специи "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Класс для представления специи/добавки к блюду 
+
+Класс spice хранит информацию о стоимости специи и её количестве\&. Позволяет рассчитать общую стоимость специи для блюда\&.
+
+.PP
+Формула расчета стоимости специи:   \[C_{spice} = p \times n
+\] где:
+.IP "\(bu" 2
+p - стоимость за грамм
+.IP "\(bu" 2
+n - количество грамм на кг
+.PP
+
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "double spice::calculate_cost ()"
+
+.PP
+Расчет общей стоимости специи 
+.PP
+\fBReturns\fP
+.RS 4
+Стоимость специи
+.RE
+.PP
+Рассчитывает стоимость по формуле: cost_per_gram * grams_per_kg 
+.SS "void spice::display ()"
+
+.PP
+Вывод информации о специи на экран 
+.SS "void spice::init (double cost, int grams)"
+
+.PP
+Инициализация специи с заданными параметрами 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcost\fP Стоимость за грамм 
+.br
+\fIgrams\fP Количество грамм на кг 
+.RE
+.PP
+
+.SS "void spice::read ()"
+
+.PP
+Ввод данных о специи с клавиатуры 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for testlab3 from the source code\&.

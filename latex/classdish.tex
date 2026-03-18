@@ -1,0 +1,114 @@
+\doxysection{dish Class Reference}
+\label{classdish}\index{dish@{dish}}
+
+
+Класс для представления блюда с добавками  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ init} (char $\ast$name, double w, double cost, \textbf{ spice} s1, \textbf{ spice} s2, \textbf{ spice} s3)
+\begin{DoxyCompactList}\small\item\em Инициализация блюда с заданными параметрами \end{DoxyCompactList}\item 
+void \textbf{ read} ()
+\begin{DoxyCompactList}\small\item\em Ввод данных о блюде с клавиатуры \end{DoxyCompactList}\item 
+void \textbf{ display} ()
+\begin{DoxyCompactList}\small\item\em Вывод информации о блюде на экран \end{DoxyCompactList}\item 
+double \textbf{ calculate\+\_\+total\+\_\+cost} ()
+\begin{DoxyCompactList}\small\item\em Расчет общей стоимости блюда \end{DoxyCompactList}\item 
+\textbf{ spice} \textbf{ get\+\_\+cheapest\+\_\+spice} ()
+\begin{DoxyCompactList}\small\item\em Нахождение самой дешевой добавки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для представления блюда с добавками 
+
+Класс dish содержит основную информацию о блюде и трех добавках. Позволяет рассчитать общую стоимость блюда с учетом всех компонентов.
+
+Общая стоимость рассчитывается по формуле:\+   \[C_{total} = W \times C_{base} + W \times \sum_{i=1}^{3} C_{spice_i}
+\]
+
+
+\begin{DoxyImageNoCaption}%
+  \doxymbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_88920e19a72836438c969b21de196f3e}}%
+\end{DoxyImageNoCaption}
+ 
+
+\label{doc-func-members}
+\doxysubsection{Member Function Documentation}
+\index{dish@{dish}!calculate\_total\_cost@{calculate\_total\_cost}}
+\index{calculate\_total\_cost@{calculate\_total\_cost}!dish@{dish}}
+\doxysubsubsection{calculate\_total\_cost()}
+{\footnotesize\ttfamily \label{classdish_a9d7d1e41adb98337d4978c9618a83fd3} 
+double dish::\+calculate\+\_\+total\+\_\+cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Расчет общей стоимости блюда 
+
+\begin{DoxyReturn}{Returns}
+Полная стоимость блюда
+\end{DoxyReturn}
+Суммирует стоимость основы и всех добавок \index{dish@{dish}!display@{display}}
+\index{display@{display}!dish@{dish}}
+\doxysubsubsection{display()}
+{\footnotesize\ttfamily \label{classdish_ae934977ab27683a90edb49944d5bbe68} 
+void dish::\+display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Вывод информации о блюде на экран 
+
+\index{dish@{dish}!get\_cheapest\_spice@{get\_cheapest\_spice}}
+\index{get\_cheapest\_spice@{get\_cheapest\_spice}!dish@{dish}}
+\doxysubsubsection{get\_cheapest\_spice()}
+{\footnotesize\ttfamily \label{classdish_a168bff4b121fcc2510301737950d2d51} 
+\textbf{ spice} dish::\+get\+\_\+cheapest\+\_\+spice (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Нахождение самой дешевой добавки 
+
+\begin{DoxyReturn}{Returns}
+Объект spice с наименьшей стоимостью 
+\end{DoxyReturn}
+\index{dish@{dish}!init@{init}}
+\index{init@{init}!dish@{dish}}
+\doxysubsubsection{init()}
+{\footnotesize\ttfamily \label{classdish_afe84af0ce824488c7b23295bdd682e92} 
+void dish::\+init (\begin{DoxyParamCaption}\item[{char $\ast$}]{name}{, }\item[{double}]{w}{, }\item[{double}]{cost}{, }\item[{\textbf{ spice}}]{s1}{, }\item[{\textbf{ spice}}]{s2}{, }\item[{\textbf{ spice}}]{s3}{}\end{DoxyParamCaption})}
+
+
+
+Инициализация блюда с заданными параметрами 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Название блюда \\
+\hline
+{\em w} & Вес блюда в кг \\
+\hline
+{\em cost} & Стоимость основы (руб/\+кг) \\
+\hline
+{\em s1} & Первая добавка \\
+\hline
+{\em s2} & Вторая добавка \\
+\hline
+{\em s3} & Третья добавка \\
+\hline
+\end{DoxyParams}
+\index{dish@{dish}!read@{read}}
+\index{read@{read}!dish@{dish}}
+\doxysubsubsection{read()}
+{\footnotesize\ttfamily \label{classdish_a6037ac4d0d4a98d836ff03e6bf1b1e2c} 
+void dish::\+read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Ввод данных о блюде с клавиатуры 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+testlab3/\+\textbf{ testlab3.\+cpp}\end{DoxyCompactItemize}
