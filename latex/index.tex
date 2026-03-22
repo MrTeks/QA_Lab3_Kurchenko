@@ -1,36 +1,3 @@
 \chapter{Программа расчета стоимости блюд }
 \label{index}\index{Программа расчета стоимости блюд@{Программа расчета стоимости блюд}}
-\doxysection{Введение}\label{index_intro}
-Данная программа предназначена для расчета стоимости блюд с учетом трех видов добавок (специй).\doxysection{Основные классы}\label{index_classes}
-
-\begin{DoxyItemize}
-\item \doxyref{spice}{p.}{classspice} -\/ класс для работы со специями
-\item \doxyref{dish}{p.}{classdish} -\/ класс для работы с блюдами
-\end{DoxyItemize}\doxysection{Основные формулы}\label{index_formula}
-Стоимость специи:\+   \[C_{spice} = p \times n
-\] где:\+
-\begin{DoxyItemize}
-\item $p$ -\/ стоимость за грамм
-\item $n$ -\/ количество грамм на кг
-\end{DoxyItemize}
-
-Общая стоимость блюда:\+   \[C_{total} = W \times C_{base} + W \times \sum_{i=1}^{3} C_{spice_i}
-\] где:\+
-\begin{DoxyItemize}
-\item $W$ -\/ вес блюда в кг
-\item $C_{base}$ -\/ стоимость основы за кг
-\item $C_{spice_i}$ -\/ стоимость i-\/й специи
-\end{DoxyItemize}\doxysection{Пример использования}\label{index_example}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{dish\ my\_dish;}
-\DoxyCodeLine{my\_dish.read();}
-\DoxyCodeLine{my\_dish.display();}
-
-\end{DoxyCode}
-\doxysection{Диаграмма классов}\label{index_diagram}
-
-\begin{DoxyImageNoCaption}%
-  \doxymbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_74b17f9ee625bf47947eb37be8c2904e}}%
-\end{DoxyImageNoCaption}
  

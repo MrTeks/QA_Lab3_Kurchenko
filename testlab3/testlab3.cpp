@@ -3,6 +3,12 @@
 #include <cmath>
 
 using namespace std;
+/**
+ * @mainpage Программа расчета стоимости блюд
+ 
+ * @image html photo_2026-03-19_22-56-41.jpg "Вставка изображения" width=400px
+
+ */
 
 /**
  * @class spice
